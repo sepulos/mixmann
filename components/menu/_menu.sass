@@ -21,7 +21,6 @@
     +PHONE_ONLY
       position: relative
 
-
   &__img
     padding: 40px 5px
 
@@ -52,8 +51,9 @@
     float: right
     +flex
     font-size: 21px
-    padding: 0 15px
+    padding: 0 15px 15px
     transition: color 0.5s
+    border-bottom: 4px solid transparent
     +PHONE_ONLY
       font-size: 18px
       width: 100%
@@ -61,7 +61,7 @@
       color: white
 
     &:hover
-      color: $yellow
+      border-bottom: 4px solid #162c47
 
   &__logo
     padding: 70px 15px 0

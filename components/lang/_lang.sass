@@ -2,5 +2,15 @@
   +clearfix
   display: inline-block
 
+  &__link
+    width: 33px
+    height: 20px
+
   &__img
     padding: 40px 5px
+    +clearfix
+    box-sizing: border-box
+    position: relative
+
+    &:hover
+      opacity: 0.5

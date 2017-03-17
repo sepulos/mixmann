@@ -27,6 +27,11 @@
     padding: 80px 0 60px
     margin-bottom: 70px
     position: relative
+    +PHONE_ONLY
+      font-size: 50px
+      width: 100%
+    +PHONE_ONLY_480
+      font-size: 36px
 
     &:after
       content: ''
@@ -39,3 +44,5 @@
   &__text
     font-size: 16px
     padding-bottom: 120px
+    +PHONE_ONLY
+      padding-bottom: 20px

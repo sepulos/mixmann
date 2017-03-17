@@ -1,5 +1,8 @@
 .offerItem
   +clearfix
+  +PHONE_ONLY
+    padding: 30px
+    border-bottom: 3px solid $orange
 
   &__box
     width: 50%
@@ -7,13 +10,20 @@
     padding: 10px
     box-sizing: border-box
     text-align: left
+    +PHONE_ONLY
+      width: 100%
+      text-align: center
 
+  &__img
+    width: 100%
+    height: auto
 
   &__title
     padding: 40px 0 30px
     width: 70%
     font-size: 36px
     position: relative
+    text-align: left
 
     &:after
       content: ''
@@ -48,6 +58,8 @@
     outline-offset: 0
     text-shadow: none
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1)
+    +PHONE_ONLY
+      display: inline-block
 
     &:hover
       border: 1px solid

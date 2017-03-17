@@ -17,6 +17,31 @@
     transform: translateX(-50%)
     font-size: 36px
     z-index: 100
+    width: 100%
+    +LAPTOP_MAX
+      top: 40px
+      font-size: 32px
+    +PHONE_ONLY
+      font-size: 26px
+      top: 20px
+    +PHONE_ONLY_600
+      font-size: 18px
+    +PHONE_ONLY_480
+      top: 10px
+
+    &.-long
+      position: absolute
+      display: inline-block
+      top: 20%
+      left: 50%
+      +TAB_ONLY_880
+        top: 20px
+        font-size: 22px
+      +PHONE_ONLY_600
+        top: 5px
+      +PHONE_ONLY_480
+        font-size: 16px
+        line-height: 20px
 
   &__bold
     font-weight: 700
