@@ -1,0 +1,90 @@
+.menu
+  +clearfix
+  z-index: 100
+  background: transparent
+  color: white
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  +PHONE_ONLY
+    background: black
+    opacity: 0.7
+
+  &__top
+    width: 100%
+    +clearfix
+    text-align: right
+    position: absolute
+    top: -20px
+    left: 0
+    +PHONE_ONLY
+      position: relative
+
+
+  &__img
+    padding: 40px 5px
+
+  &__nav
+    position: relative
+    +PHONE_ONLY
+      display: none
+      background: black
+      +clearfix
+      font-size: 16px
+      width: 100%
+      z-index: 5
+
+  &__navRight
+    display: flex
+    float: right
+    justify-content: center
+    padding-right: 35px
+    position: relative
+    padding-top: 70px
+    +PHONE_ONLY
+      float: none
+      +clearfix
+      display: block
+      padding: 0
+
+  &__navItem
+    float: right
+    +flex
+    font-size: 21px
+    padding: 0 15px
+    transition: color 0.5s
+    +PHONE_ONLY
+      font-size: 18px
+      width: 100%
+      padding: 10px 0
+      color: white
+
+    &:hover
+      color: $yellow
+
+  &__logo
+    padding: 70px 15px 0
+    display: block
+    width: 200px
+    float: left
+    z-index: 6
+    +flex
+    +PHONE_ONLY
+      width: 200px
+      padding: 10px
+      position: relative
+
+  &__bars
+    position: absolute
+    top: 0
+    right: 0
+    color: white
+    font-size: 44px
+    padding: 0 10px
+    display: none
+    cursor: pointer
+    z-index: 6
+    +PHONE_ONLY
+      position: relative
+      float: right

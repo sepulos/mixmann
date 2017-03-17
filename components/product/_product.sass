@@ -1,0 +1,85 @@
+.product
+  +clearfix
+  padding: 0 0 80px
+
+  &__box
+    width: 100%
+    text-align: left
+    float: none
+    +clearfix
+
+    &.-half
+      width: 50%
+      text-align: left
+      float: left
+      +clearfix
+
+    &.-halfR
+      width: 50%
+      text-align: right
+      float: right
+      +clearfix
+
+  &__link
+    font-size: 16px
+    float: left
+    text-decoration: underline
+
+    &:hover
+      text-decoration: underline
+
+    &:last-child
+      text-decoration: none
+
+  &__orange
+    color: $orange
+    float: left
+    padding: 0 10px
+
+  &__item
+    padding: 40px 0 80px
+
+  &__title
+    font-size: 36px
+    padding: 30px 0
+    position: relative
+    margin-bottom: 30px
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100px
+      border-bottom: 2px solid $yellow
+
+  &__right
+    font-size: 36px
+    padding: 30px 0
+    position: relative
+    margin-bottom: 30px
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 100px
+      border-bottom: 2px solid $yellow
+
+  &__list
+    font-size: 16px
+    text-align: left
+
+    &:before
+      content: "• "
+      color: $orange
+      padding-right: 10px
+
+  &__listRight
+    font-size: 16px
+    text-align: right
+
+    &:after
+      content: "• "
+      color: $orange
+      padding-left: 10px

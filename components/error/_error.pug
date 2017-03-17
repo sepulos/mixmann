@@ -1,0 +1,17 @@
+.error
+  img.error__img(src="../components/error/src/error.jpg" alt="error")
+
+  .container
+    .error__logo
+      include ../logo/_logo
+
+    .error__lang
+      include ../lang/_lang
+
+    .error__content
+      .error__text.-full Przepraszamy, strona której szukałeś nie została znaleziona.
+      .error__back
+        .error__text.-float Wróć do
+        a.error__link(href="#") poprzedniej strony
+        .error__text.-float lub na
+        a.error__link(href="#") stronę główną
